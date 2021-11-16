@@ -14,27 +14,35 @@ const boxContainer = document.querySelector('.box-container')
 
 for ( let i = 1; i <= 100; i++){
 
-    // creo la variabile nell'if per selezionare con quale colore devo popolare le mie box
+    // creo la variabile nell'if per selezionare con quale colore devo popolare le mie box e cosa scrivere dentro
 
     let colorBox;
+    let innerBox;
 
     if ( (i % 3 == 0) && (i % 5 == 0) ){
 
-        colorBox = 'fizz-buzz';
+        colorBox = 'fizz-buzz-color';
+        innerBox = 'FizzBuzz';
 
     } else if ( i % 5 == 0){
 
-        colorBox = 'buzz';
+        colorBox = 'buzz-color';
+        innerBox = 'Buzz';
 
     } else if ( i % 3 == 0){
 
-        colorBox = 'fizz';
+        colorBox = 'fizz-color';
+        innerBox = 'Fizz';
+
+    } else{
+        innerBox = i;
     }
+
 
     // mi creo il nuovo elemento che dovrà popolare l'html
 
      let boxUnit =`
-        <div class="box ${colorBox}">${i}</div>
+        <div class="box ${colorBox}">${innerBox}</div>
      `;
 
     // vado a popolare il box container

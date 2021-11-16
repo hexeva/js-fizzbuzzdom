@@ -12,7 +12,7 @@ body{
 }
 h1 {
     color:white;
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
     margin:20px 0;
 }
@@ -34,25 +34,24 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin: 10px;
-    color:white;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #1389b2;
 }
    
    
 
 
-.fizz {
+.fizz-color{
     background-color: #0cd6a2;
 }
 
-.buzz{
+.buzz-color{
     background-color:#ffd166;
 }
 
-.fizz-buzz{
+.fizz-buzz-color{
     background-color: #f0466f;
 }
