@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #083b4c;
+    
+}
+h1 {
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
