@@ -13,10 +13,31 @@ const boxContainer = document.querySelector('.box-container')
 
 for ( let i = 1; i <= 100; i++){
 
+    // mi creo la variabile testo
+    let innerBox;
+
+    if ( ( i % 3 == 0) && ( i % 5 == 0)){
+
+        innerBox = 'FizzBuzz';
+
+    } else if ( i % 5 == 0){
+
+        innerBox = 'Buzz';
+
+    } else if (i % 3 == 0){
+
+        innerBox = 'Fizz';
+
+    } else{
+        innerBox = i;
+    }
+
+
+
     // mi creo il nuovo elemento che dovrà popolare l'html
 
     let boxUnit =`
-    <div class="box">${i}</div>
+    <div class="box">${innerBox}</div>
     `;
 
     // vado a popolare il box container
