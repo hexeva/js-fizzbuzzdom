@@ -1,33 +1,29 @@
-
 // Scrivi un programma che stampi i numeri da 1 a 100.
-// MILESTONE 1
-// Per i multipli di 3 stampi in console “Fizz” al posto del numero e per i multipli di 5 stampi in console Buzz.
-// Per i numeri che sono sia multipli di 3 che di 5 stampi in console FizzBuzz.
 
-// STAMPO IN CONSOLE NUMERI DA UNO A 100 USANDO CICLO FOR
-
-for (let i = 1; i <= 100; i++) {
-    // controllo
-    console.log(i);
-
-    // valuto se i numeri stampati sono multipli di 3 di 5 o di entrambi; comincio con il multiplo maggiore e creo una if
-
-    if( (i % 3 == 0) && (i % 5 == 0) ){
-     
-        console.log('FizzBuzz');
+// Applica uno stile differente a seconda del valore dell'indice per i multipli di 3, per i multipli di 5 e per i valori che sono sia multipli di 3 che di 5.
 
 
-    } else if (i % 5 == 0){
 
-        console.log('buzz');
+// creo la variabile che mi selezionerà quale elemnto io devo popolare
+
+const boxContainer = document.querySelector('.box-container')
 
 
-    } else if (i % 3 == 0){
+// CREO IL CICLO FOR
 
-        console.log('Fizz');
-    }
 
+for ( let i = 1; i <= 100; i++){
+
+    // mi creo il nuovo elemento che dovrà popolare l'html
+
+     let boxUnit =`
+        <div class="box">${i}</div>
+     `;
+
+    // vado a popolare il box container
+
+    boxContainer.innerHTML += boxUnit;
+    console.log(boxContainer)
 
 
 }
-// fine ciclo for
